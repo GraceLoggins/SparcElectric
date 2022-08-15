@@ -9,6 +9,9 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 /*******************************************************************************/
+IF EXISTS(SELECT 1 FROM sys.procedures WHERE Name = 'sparc_ProcessCustWOintoDW')
+DROP PROCEDURE dbo.sparc_ProcessCustWOintoDW;
+/*******************************************************************************/
 /*     CREATE PROCEDURE sparc_ProcessCustWOintoDW                              */ 
 /*******************************************************************************/
 CREATE PROCEDURE [dbo].[sparc_ProcessCustWOintoDW]
@@ -56,6 +59,9 @@ WHERE woc.SparcWONumber = wf.SparcWONumber;
 END
 GO
 
+/*******************************************************************************/
+IF EXISTS(SELECT 1 FROM sys.procedures WHERE Name = 'sparc_ProcessInfrasWOintoDW')
+DROP PROCEDURE dbo.sparc_ProcessInfrasWOintoDW;
 /*******************************************************************************/
 /*     CREATE PROCEDURE sparc_ProcessInfrasWOintoDW                            */ 
 /*******************************************************************************/
