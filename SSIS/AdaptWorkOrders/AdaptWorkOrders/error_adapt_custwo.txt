@@ -1,1 +1,0 @@
-SparcWONumber,CustomerID,EmployeeID,WorkOrderTypeID,WOBegin,WOEnd,WOEquipCost,WOLaborCost,JobComplete,JobNotes,MeterModelID,CustMeterIdentifier,NoticeDateTime,DWProc,ErrorCode,ErrorColumn
