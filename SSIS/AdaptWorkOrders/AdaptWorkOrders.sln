@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "AdaptWorkOrders", "AdaptWorkOrders\AdaptWorkOrders.dtproj", "{8A95AF06-B17D-4C96-90CE-3831B8CD40DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Additional|Default = Additional|Default
+		Additional2|Default = Additional2|Default
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A95AF06-B17D-4C96-90CE-3831B8CD40DF}.Additional|Default.ActiveCfg = Additional
+		{8A95AF06-B17D-4C96-90CE-3831B8CD40DF}.Additional|Default.Build.0 = Additional
+		{8A95AF06-B17D-4C96-90CE-3831B8CD40DF}.Additional2|Default.ActiveCfg = Development
+		{8A95AF06-B17D-4C96-90CE-3831B8CD40DF}.Additional2|Default.Build.0 = Development
+		{8A95AF06-B17D-4C96-90CE-3831B8CD40DF}.Development|Default.ActiveCfg = Development
+		{8A95AF06-B17D-4C96-90CE-3831B8CD40DF}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35950C4E-5259-4DDE-A39F-4F662010AAA7}
+	EndGlobalSection
+EndGlobal

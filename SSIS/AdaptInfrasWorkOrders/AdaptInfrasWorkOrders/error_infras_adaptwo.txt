@@ -1,0 +1,1 @@
+WOInfrasID,SparcWONumber,InventoryID,EmployeeID,WorkOrderTypeID,WOBegin,WOEnd,WOEquipCost,WOLaborCost,JobComplete,JobNotes,NoticeDateTime,DWProc,ErrorCode,ErrorColumn
