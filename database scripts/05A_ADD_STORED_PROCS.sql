@@ -11,6 +11,8 @@ GO
 /*******************************************************************************/
 IF EXISTS(SELECT 1 FROM sys.procedures WHERE Name = 'sparc_ProcessCustWOintoDW')
 DROP PROCEDURE dbo.sparc_ProcessCustWOintoDW;
+GO
+
 /*******************************************************************************/
 /*     CREATE PROCEDURE sparc_ProcessCustWOintoDW                              */ 
 /*******************************************************************************/
@@ -62,6 +64,8 @@ GO
 /*******************************************************************************/
 IF EXISTS(SELECT 1 FROM sys.procedures WHERE Name = 'sparc_ProcessInfrasWOintoDW')
 DROP PROCEDURE dbo.sparc_ProcessInfrasWOintoDW;
+GO
+
 /*******************************************************************************/
 /*     CREATE PROCEDURE sparc_ProcessInfrasWOintoDW                            */ 
 /*******************************************************************************/
