@@ -1,7 +1,14 @@
-## SparcElectric Mixed-Use Data Warehouse test-bed
+## SparcElectric Mixed Workload Database / Data Warehouse Test-bed
 
 Site is currently in process of upload, editing, and pages creation.
             Please be patient. Changes are incomplete.
+	    
+# The Scenario
+SparcElectric, a fictitious small electric power supplier, serves seven locations (six in Virginia and one in Maryland).  Their customer types primarily consist of residential and commercial clients – as well as several industrial, city, and county government entities.
+
+To serve their customers and track the operations of their business, SparcElectric employs a mixed workload database – also referred to as a hybrid data warehouse model – which allows them to run OLTP and OLAP workload processing side-by-side. This combined database/data warehouse provides the ability to record data inserts and updates through transactions, and also perform analytics.
+
+Anticipating an increase in workload due to various acquisitions, SparcElectric is moving a portion of their operations to the cloud. They expect a large increase to their current customer base and anticipate re-platforming or hybridizing (to the cloud) their data environment during their modernization efforts.	    
             
 ### DAX code test
 ```markdown
