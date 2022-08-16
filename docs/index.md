@@ -34,6 +34,7 @@ Leadership at the fictional power company SparcElectric requires on-demand data 
 Platform - Microsoft SQL Server on-prem database, SSMS, SSIS, and Power BI, ultimately incorporating a portion into Azure. 
 Data - Work order data is randomized between two limits; a min and max for customer accounts labor and equipment costs that varies over time, and a min and max for infrastructure labor and equipment costs that varies over the same time period.
 
+![Test Pic](/docs/powerbi_pix/01InfrastructureSummary.PNG){:class="img-responsive"}
 
 This is a preliminary setup of data for a mixed-use data warehouse combining
             OLTP properties with data warehouse capabilities.
