@@ -1,3 +1,6 @@
+layout: page
+permalink: https://GraceLoggins/SparcElectric/docs/index.md
+
 ## SparcElectric Mixed Workload Database / Data Warehouse Test-bed
 
 Site is currently in process of upload, editing, and pages creation.
@@ -10,6 +13,13 @@ To serve their customers and track the operations of their business, SparcElectr
 
 Anticipating an increase in workload due to various acquisitions, SparcElectric is moving a portion of their operations to the cloud. They expect a large increase to their current customer base and anticipate re-platforming or hybridizing (to the cloud) their data environment during their modernization efforts.
 
+### First Objectives:
+1. Simulate a small on-premise mixed workload (OLTP + OLAP) database/data warehouse environment.
+2. Demonstrate the necessary changes as SparcElectric transitions some or all of its processing to the cloud.
+3. Simulate SparcElectric's mixed workload on-premise data warehouse – the data mart for the operations side of their enterprise responsible for the SparcElectric fleet and the power distributions to its customers.
+4. Transition one or more segments to the cloud (as a hybrid, augmented, or distributed data architecture) as an exercise in re-platforming and modernizing a data environment.
+5. Retain all version of the necessary code and insights as a resource.
+
 ### Power BI Insights for SparcElectric
 Leadership at the fictional power company SparcElectric requires on-demand data visualizations which address the following requirements:
 
@@ -20,19 +30,18 @@ Leadership at the fictional power company SparcElectric requires on-demand data 
 5. What inventory segment (street lights, transformers, power lines, etc.) is SparcElectric spending the most on for internal maintenance and repairs?
 6. What is the breakdown between equipment and labor costs on internal inventory?
 
-### First Objectives:
-1. Simulate a small on-premise mixed workload (OLTP + OLAP) database/data warehouse environment.
-2. Simulate SparcElectric's mixed workload on-premise data warehouse – the data mart for the operations side of their enterprise responsible for the SparcElectric fleet and the power distributions to its customers.
-3. Create the Power BI report(s) to answer the leadership's insight needs.
-4. Transition one or more segments to the cloud (as a hybrid, augmented, or distributed data architecture) as an exercise in re-platforming and modernizing a data environment. Demonstrate the necessary changes for those transitions.
-5. Retain all version of the necessary code and insights as a resource.
-
 ### Technical Choices (Overview)
 Platform - Microsoft SQL Server on-prem database, SSMS, SSIS, and Power BI, ultimately incorporating a portion into Azure. 
 Data - Work order data is randomized between two limits; a min and max for customer accounts labor and equipment costs that varies over time, and a min and max for infrastructure labor and equipment costs that varies over the same time period.
 
-graphics test:
-![PowerBI graphic](../Power BI/graphics/01 Infrastructure Summary.PNG){:class="img-responsive"}
+![Test Pic](https://raw.githubusercontent.com/GraceLoggins/SparcElectric/main/docs/powerbi_pix/01InfrastructureSummary.PNG)
+
+![Test Pic2](powerbi_pix/03CustomerSummary.PNG)
+
+[THENAMEOFLINK](index.md)
+
+[THENAMEOFLINK](./powerbi_pix/01InfrastructureSummary.PNG)
+
 
 This is a preliminary setup of data for a mixed-use data warehouse combining
             OLTP properties with data warehouse capabilities.
