@@ -26,11 +26,17 @@ Leadership at the fictional power company SparcElectric requires on-demand data 
 1. What is the balance between SparcElectric's different customer segments in the customer work orders? (residential, commercial, and government accounts).
 2. And what is the cost of each of those different segments in labor and equipment?
     ![Customer Segment Breakdown](./powerbi_pix/03CustomerSummary.PNG)
+
+
 3. How much time is being spent on-site for each customer segment?
     ![Customer Onsite and Equipment](./powerbi_pix/04CustomerComparison.PNG) 
     ![Zipcode Analysis of Onsite Time](./powerbi_pix/05CustomerZipcodeAnalysis.PNG)
+
+
 4. How much time is being spent on-site for SparcElectric's infrastructure tickets? 
     ![Infrastructure Onsite and Equipment](./powerbi_pix/02InfrastructureComparison.PNG)
+
+
 5. What inventory segment (street lights, transformers, power lines, etc.) is SparcElectric spending the most on for internal maintenance and repairs?
     ![Lighting](./powerbi_pix/Lighting1.PNG) 
     ![Lighting:Another view](./powerbi_pix/Lighting2.PNG)
@@ -40,8 +46,12 @@ Leadership at the fictional power company SparcElectric requires on-demand data 
     ![Transformers:Another view](./powerbi_pix/Transformers2.PNG)
     ![Line work](./powerbi_pix/Linework1.PNG) 
     ![Line work:Another view](./powerbi_pix/Linework2.PNG)
+
+
 6. What is the breakdown between equipment and labor costs in our infrastructure and inventory? 
     ![Infrastructure Breakdown](./powerbi_pix/01InfrastructureSummary.PNG)
+
+
 
 ### Technical Choices (Overview)
 Platform - Microsoft SQL Server on-prem database, SSMS, SSIS, and Power BI, ultimately incorporating a portion into Azure. 
