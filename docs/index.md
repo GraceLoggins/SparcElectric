@@ -1,6 +1,3 @@
-layout: page
-permalink: https://GraceLoggins/SparcElectric/docs/index.md
-
 ## SparcElectric Mixed Workload Database / Data Warehouse Test-bed
 
 Site is currently in process of upload, editing, and pages creation.

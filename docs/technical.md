@@ -1,7 +1,3 @@
-layout: page
-title: "Technical Info"
-permalink: https://GraceLoggins/SparcElectric/docs/technical.md
-
 ## Additional Information for SparcElectric Mixed Workload Database / DW
 
 ### Main Entities for the data mart focused on fleet operations:
