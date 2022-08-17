@@ -38,7 +38,7 @@ Data - Work order data is randomized between two limits; a min and max for custo
 
 ![Test Pic2](powerbi_pix/03CustomerSummary.PNG)
 
-[THENAMEOFLINK](https://graceloggins/SparcElectric/docs/index.md)
+[THENAMEOFLINK](index.md)
 
 ![test link]({% link ./technical.md %})
 
