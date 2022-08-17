@@ -36,6 +36,8 @@ Data - Work order data is randomized between two limits; a min and max for custo
 
 ![Test Pic](/docs/powerbi_pix/01InfrastructureSummary.PNG){:class="img-responsive"}
 
+[test link]({% link technical.md %})
+
 This is a preliminary setup of data for a mixed-use data warehouse combining
             OLTP properties with data warehouse capabilities.
             The generated portions follow the fleet operations for the company, mainly
