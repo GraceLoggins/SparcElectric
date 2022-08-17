@@ -38,6 +38,8 @@ Data - Work order data is randomized between two limits; a min and max for custo
 
 ![Test Pic2](powerbi_pix/03CustomerSummary.PNG)
 
+![test1]({% link technical.md %})
+
 ![test link]({% link ./technical.md %})
 
 ![text link2]({{ site.baseurl }}{% link technical.md %})
