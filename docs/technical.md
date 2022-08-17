@@ -6,6 +6,10 @@ Customer: (a simulated customer service account a work order is created against)
 
 ![Customer Entity](/entities_pix/CustomerEntity.png)
 
+And its relationships with other base tables
+
+![Customer Entity2](/entities_pix/CompleteCustomerTables.PNG)
+
 
 
 Inventory: (a simulated inventory element belonging to 
@@ -13,6 +17,9 @@ SparcElectric requiring service a work order is created against)
 
 ![Inventory Entity](/entities_pix/InventoryEntity.png)
 
+And its relationships with the infrastructure base tables
+
+![Inventory Entity2](/entities_pix/CompleteInfrastructureTables.PNG)
 
 
 Employee: (the simulated SparcElectric fleet employee servicing either customer service account or inventory)
@@ -24,6 +31,10 @@ Employee: (the simulated SparcElectric fleet employee servicing either customer 
 Work Order: (a service incident generated against either a customer account or an inventory element)
 
 ![Work Order Entities](/entities_pix/WorkOrderEntities.png)
+
+Complete Work Order tables
+
+![Work Order Tables](/entities_pix/CompleteWorkOrderTables.PNG)
 
 
 
