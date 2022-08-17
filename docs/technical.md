@@ -4,26 +4,26 @@
 
 1. Customer: (a simulated customer service account a work order is created against)
 
-[Customer Entity](/entities_pix/CustomerEntity.png)
+![Customer Entity](/entities_pix/CustomerEntity.png)
 
 
 
 2. Inventory: (a simulated inventory element belonging to 
 SparcElectric requiring service a work order is created against)
 
-[Inventory Entity](/entities_pix/InventoryEntity.png)
+![Inventory Entity](/entities_pix/InventoryEntity.png)
 
 
 
 3. Employee: (the simulated SparcElectric fleet employee servicing either customer service account or inventory)
 
-[Employee Entity](/entities_pix/EmployeeEntity.png)
+![Employee Entity](/entities_pix/EmployeeEntity.png)
 
 
 
 4. Work Order: (a service incident generated against either a customer account or an inventory element)
 
-[Work Order Entities](/entities_pix/WorkOrderEntities.png)
+![Work Order Entities](/entities_pix/WorkOrderEntities.png)
 
 
 
