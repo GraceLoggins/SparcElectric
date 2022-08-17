@@ -7,9 +7,13 @@ permalink: https://GraceLoggins/SparcElectric/docs/technical.md
 ### Main Entities for the data mart focused on fleet operations:
 
 1. Customer: (a simulated customer service account a work order is created against)
+        ![Customer Entity](/entities_pix/CustomerEntity.png)
 2. Inventory: (a simulated inventory element belonging to SparcElectric requiring service a work order is created against)
+        ![Inventory Entity](/entities_pix/InventoryEntity.png)
 3. Employee: (the simulated SparcElectric fleet employee servicing either customer service account or inventory)
+        ![Employee Entity](/entities_pix/EmployeeEntity.png)
 4. Work Order: (a service incident generated against either a customer account or an inventory element)
+        ![Work Order Entities](/entities_pix/WorkOrderEntities.png)
 
 ### Future Directions for the Test-bed (in no particular order)
 
@@ -19,7 +23,7 @@ permalink: https://GraceLoggins/SparcElectric/docs/technical.md
 4. Implement the Grid Storage data simulation. Add the entities and simulation of grid storage, interaction with outside vendors, and grid loss to the test-bed.
 5. Alter the methods of randomizing the data, to bring it more in line with what a real power company would experience.
 
-[THENAMEOFLINK](index.md)
+[Back to Main Page](index.md)
 
-![Test Pic2](/entities_pix/InventoryEntity.png)
+
 

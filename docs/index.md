@@ -23,29 +23,33 @@ Anticipating an increase in workload due to various acquisitions, SparcElectric 
 ### Power BI Insights for SparcElectric
 Leadership at the fictional power company SparcElectric requires on-demand data visualizations which address the following requirements:
 
-1. What is the balance between SparcElectric's different customer segments in the customer work orders? (residential, commercial, and government accounts)
-2. What is the cost of each of those different segments in labor and equipment?
+1. What is the balance between SparcElectric's different customer segments in the customer work orders? (residential, commercial, and government accounts).
+2. And what is the cost of each of those different segments in labor and equipment?
+    [Customer Segment Breakdown](./powerbi_pix/03CustomerSummary.PNG)
 3. How much time is being spent on-site for each customer segment?
-4. How much time is being spent on-site for SparcElectric's infrastructure tickets?
+    [Customer Onsite and Equipment](./powerbi_pix/04CustomerComparison.PNG) 
+    [Zipcode Analysis of Onsite Time](./powerbi_pix/05CustomerZipcodeAnalysis.PNG)
+4. How much time is being spent on-site for SparcElectric's infrastructure tickets? 
+    [Infrastructure Onsite and Equipment](./powerbi_pix/02InfrastructureComparison.PNG)
 5. What inventory segment (street lights, transformers, power lines, etc.) is SparcElectric spending the most on for internal maintenance and repairs?
-6. What is the breakdown between equipment and labor costs on internal inventory?
+    [Lighting](./powerbi_pix/Lighting1.PNG) 
+    [Lighting:Another view](./powerbi_pix/Lighting2.PNG)
+    [HV Towers](./powerbi_pix/HighVoltageTowers1.PNG) 
+    [HV Towers:Another view](./powerbi_pix/HighVoltageTowers2.PNG)
+    [Transformers](./powerbi_pix/Transformers1.PNG) 
+    [Transformers:Another view](./powerbi_pix/Transformers2.PNG)
+    [Line work](./powerbi_pix/Linework1.PNG) 
+    [Line work:Another view](./powerbi_pix/Linework2.PNG)
+6. What is the breakdown between equipment and labor costs in our infrastructure and inventory? 
+    [Infrastructure Breakdown](./powerbi_pix/01InfrastructureSummary.PNG)
 
 ### Technical Choices (Overview)
 Platform - Microsoft SQL Server on-prem database, SSMS, SSIS, and Power BI, ultimately incorporating a portion into Azure. 
 Data - Work order data is randomized between two limits; a min and max for customer accounts labor and equipment costs that varies over time, and a min and max for infrastructure labor and equipment costs that varies over the same time period.
 
-![Test Pic](https://raw.githubusercontent.com/GraceLoggins/SparcElectric/main/docs/powerbi_pix/01InfrastructureSummary.PNG)
+[Go To Technical and Entity Information](technical.md)
 
-![Test Pic2](powerbi_pix/03CustomerSummary.PNG)
-
-[THENAMEOFLINK](index.md)
-
-[TestPic](./powerbi_pix/01InfrastructureSummary.PNG)
-
-[Different format](/powerbi_pix/01InfrastructureSummary.PNG)
-
-
-This is a preliminary setup of data for a mixed-use data warehouse combining
+This is a preliminary setup of data for a mixed workload data warehouse combining
             OLTP properties with data warehouse capabilities.
             The generated portions follow the fleet operations for the company, mainly
             work orders, on both customer accounts and the company's electric infrastructure.
