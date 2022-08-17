@@ -19,3 +19,7 @@ permalink: https://GraceLoggins/SparcElectric/docs/technical.md
 4. Implement the Grid Storage data simulation. Add the entities and simulation of grid storage, interaction with outside vendors, and grid loss to the test-bed.
 5. Alter the methods of randomizing the data, to bring it more in line with what a real power company would experience.
 
+[THENAMEOFLINK](index.md)
+
+![Test Pic2](/entities_pix/InventoryEntity.png)
+
