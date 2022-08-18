@@ -1,4 +1,4 @@
-## SparcElectric Mixed Workload Database / Data Warehouse Test-bed
+## SparcElectric Mixed Workload Database and Data Warehouse Test-bed
 
 Site is currently in process of upload, editing, and pages creation.
             Please be patient. Changes are incomplete.
@@ -6,7 +6,6 @@ Site is currently in process of upload, editing, and pages creation.
 [Go To Technical and Entity Information](technical.md)   
 [How the SparcElectric Test-bed was Generated](steps_to_build.md)  
 
-   
 ---
 
 ### The Scenario
