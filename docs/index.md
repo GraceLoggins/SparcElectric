@@ -1,7 +1,8 @@
-## SparcElectric Mixed Workload Database and Data Warehouse Test-bed
+## SparcElectric Test-bed
 
 Site is currently in process of upload, editing, and pages creation.
             Please be patient. Changes are incomplete.
+### SparcElectric Mixed Workload Database and Data Warehouse Test-bed
 
 [Go To Technical and Entity Information](technical.md)   
 [How the SparcElectric Test-bed was Generated](steps_to_build.md)  
@@ -51,7 +52,7 @@ The second dashboard shows the breakdown of costs, both labor and equipment by b
 
 The dashboard below shows the onsite repair hours along with the equipment costs, sliced by the inventory segments by infrastructure type: High Voltage equipment, Interconnects, Lighting (street lights), Linework, Substation equipment, and Transformers.
 
-    ![Infrastructure Onsite and Equipment](./powerbi_pix/02InfrastructureComparison.PNG)
+![Infrastructure Onsite and Equipment](./powerbi_pix/02InfrastructureComparison.PNG)
 
 
 
@@ -59,13 +60,13 @@ The dashboard below shows the onsite repair hours along with the equipment costs
 
 Turns out it's lighting, largely due to the number of streetlights the company keeps in repair.
 
-    ![Lighting:Another view](./powerbi_pix/Lighting2.PNG)
+![Lighting:Another view](./powerbi_pix/Lighting2.PNG)
 
 
 
 > What is the breakdown between SparcElectric's equipment and labor costs in infrastructure and inventory? 
 
-    ![Infrastructure Breakdown](./powerbi_pix/01InfrastructureSummary.PNG)
+![Infrastructure Breakdown](./powerbi_pix/01InfrastructureSummary.PNG)
 
 
 
