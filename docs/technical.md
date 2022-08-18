@@ -1,34 +1,45 @@
-## Additional Information for SparcElectric Mixed Workload Database / DW
+## Additional Information
+[Back to Main Page](index.md)
+[How the SparcElectric Test-bed was Generated](steps_to_build.md)
+### Overview:
+
+This is a preliminary setup of data for a mixed workload data warehouse combining OLTP properties with data warehouse capabilities. 
+The generated portions follow the fleet operations for the company, mainly work orders, on both customer accounts and the company’s electric infrastructure.
+Additional pieces will be added in future, such as meters and grid storage, as well as adjustments to the balance of the fleet portions.
+
+Customer and Inventory tables serve as base tables, and as dimension tables, along with some of their supporting tables. The tables WOCustomer and WOInfras are work order tables and are able to hold multiple transactions against a single Spark work order (SparcWONumber).
+
+WorkOrderCustFact, WorkOrderInfrasFact, and DimDate are all data warehouse tables, and serve to aggregate information about customer work orders, infrastructure/inventory work orders, and DimDate holds multiple levels of date information for any analysis to slice against.
 
 ### Main Entities for the data mart focused on fleet operations:
 
-Customer: (a simulated customer service account a work order is created against)
+Customer Entity and related tables, showing their relationships:
 
 ![Customer Entity](/entities_pix/CustomerEntity.png)
 
-And its relationships with other base tables
+Customer's relationships with other base tables
 
 ![Customer Entity2](/entities_pix/CompleteCustomerTables.PNG)
 
 
 
-Inventory: (a simulated inventory element belonging to 
-SparcElectric requiring service a work order is created against)
+Inventory Entity and related tables, showing their relationships:
 
 ![Inventory Entity](/entities_pix/InventoryEntity.png)
 
-And its relationships with the infrastructure base tables
+Inventory's relationships with the infrastructure base tables
 
 ![Inventory Entity2](/entities_pix/CompleteInfrastructureTables.PNG)
 
 
-Employee: (the simulated SparcElectric fleet employee servicing either customer service account or inventory)
+
+Employee Entity and related tables, showing their relationships:
 
 ![Employee Entity](/entities_pix/EmployeeEntity.png)
 
 
 
-Work Order: (a service incident generated against either a customer account or an inventory element)
+Work Order and related tables, showing their relationships: (a work order represents a service incident generated against either a customer account or an infrastructure / inventory element)
 
 ![Work Order Entities](/entities_pix/WorkOrderEntities.png)
 
@@ -39,15 +50,16 @@ Complete Work Order tables
 
 
 
-### Future Directions for the Test-bed (in no particular order)
+### Test-bed Future Directions and Updates
 
-1. Move part or all of the simulation onto the Azure Platform. Migrate some (hybrid data environment) or all (total re-platforming).
-2. “Lift and Shift” the SSIS packages that generate the simulated work orders onto Azure. (as an exercise to test the process.)
-3. Implement the Electric Delivery (Metering) data simulation. Add simulated near real-time meter reads, as SparcElectric migrates from its existing analog and AMR meters to fully digital and near-real-time data collection.
-4. Implement the Grid Storage data simulation. Add the entities and simulation of grid storage, interaction with outside vendors, and grid loss to the test-bed.
-5. Alter the methods of randomizing the data, to bring it more in line with what a real power company would experience.
+- Implement the Electric Delivery (Metering) data simulation. Add simulated near real-time meter reads, as SparcElectric migrates from its existing analog and AMR meters to fully digital and near-real-time data collection.
+- Implement the Grid Storage data simulation. Add the entities and simulation of grid storage, interaction with outside vendors, and grid loss to the test-bed.
+- Alter the methods of randomizing the data, to bring it more in line with what a real power company would experience.
+- Move part or all of the simulation onto the Azure Platform. Migrate some (hybrid data environment) or all (total re-platforming).
+- “Lift and Shift” the SSIS packages that generate the simulated work orders onto Azure. (as an exercise to test the process.)
+
 
 [Back to Main Page](index.md)
-
+[How the SparcElectric Test-bed was Generated](steps_to_build.md)
 
 
