@@ -1,10 +1,7 @@
 [Back to Main Page](index.md)   
 [Go To Technical and Entity Information](technical.md)  
 
----  
-
-This assumes access and authority to run SSMS scripts, or to run scripts against 
-a database you have authority to create, drop, update, alter, etc.
+---
 
 SSMS:
 Run the six-part segmented script as follows:
@@ -12,7 +9,8 @@ Run the six-part segmented script as follows:
 01A_CREATE_SparcElectricDW.sql
     This sets up the basic underlying database and sets some parameters and configuration for it.
 
-02A_CREATE_TABLES_SparcElectricDW.sql [script](https://github.com/GraceLoggins/SparcElectric/blob/site/database%20scripts/02A_CREATE_TABLES_SparcElectricDW.sql)
+02A_CREATE_TABLES_SparcElectricDW.sql 
+[script](https://github.com/GraceLoggins/SparcElectric/blob/site/database%20scripts/02A_CREATE_TABLES_SparcElectricDW.sql)
     This creates the tables.
 
 03A_FILL_BASE_TABLES_SparcElectricDW.sql
@@ -21,7 +19,8 @@ Run the six-part segmented script as follows:
 04A_ADD_FOREIGN_KEYS_ETC.sql
     Adds the relationships between the tables as a set of foreign keys with constraints.
 
-05A_ADD_STORED_PROCS.sql [script](https://github.com/GraceLoggins/SparcElectric/blob/site/database%20scripts/05A_ADD_STORED_PROCS.sql)
+05A_ADD_STORED_PROCS.sql 
+[script](https://github.com/GraceLoggins/SparcElectric/blob/site/database%20scripts/05A_ADD_STORED_PROCS.sql)
     Adds the two stored procedures sparc_ProcessCustWOintoDW and sparc_ProcessInfrasWOintoDW, which are used after the SSIS packages are run, to collect up the SparcWONumbers into the fact tables.
 
 06A_ADD_DATE_DIMENSION.sql

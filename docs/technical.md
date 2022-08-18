@@ -16,37 +16,37 @@ WorkOrderCustFact, WorkOrderInfrasFact, and DimDate are all data warehouse table
 
 ### Main Entities for the data mart focused on fleet operations:
 
-Customer Entity and related tables, showing their relationships:
+> Customer Entity and related tables, showing their relationships:
 
 ![Customer Entity](/entities_pix/CustomerEntity.png)
 
-Customer's relationships with other base tables
+> Customer's relationships with other base tables
 
 ![Customer Entity2](/entities_pix/CompleteCustomerTables.PNG)
 
 
 
-Inventory Entity and related tables, showing their relationships:
+> Inventory Entity and related tables, showing their relationships:
 
 ![Inventory Entity](/entities_pix/InventoryEntity.png)
 
-Inventory's relationships with the infrastructure base tables
+> Inventory's relationships with the infrastructure base tables
 
 ![Inventory Entity2](/entities_pix/CompleteInfrastructureTables.PNG)
 
 
 
-Employee Entity and related tables, showing their relationships:
+> Employee Entity and related tables, showing their relationships:
 
 ![Employee Entity](/entities_pix/EmployeeEntity.png)
 
 
 
-Work Order and related tables, showing their relationships: (a work order represents a service incident generated against either a customer account or an infrastructure / inventory element)
+> Work Order and related tables, showing their relationships: (a work order represents a service incident generated against either a customer account or an infrastructure / inventory element)
 
 ![Work Order Entities](/entities_pix/WorkOrderEntities.png)
 
-Complete Work Order tables
+> Complete Work Order tables
 
 ![Work Order Tables](/entities_pix/CompleteWorkOrderTables.PNG)
 
