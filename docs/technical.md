@@ -1,4 +1,3 @@
-## Additional Information
 [Back to Main Page](index.md)   
 [How the SparcElectric Test-bed was Generated](steps_to_build.md)  
 
