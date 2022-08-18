@@ -7,11 +7,11 @@
 
 This is a preliminary setup of data for a mixed workload data warehouse combining OLTP properties with data warehouse capabilities. 
 The generated portions follow the fleet operations for the company, mainly work orders, on both customer accounts and the company’s electric infrastructure.
-Additional pieces will be added in future, such as meters and grid storage, as well as adjustments to the balance of the fleet portions.
+Additional pieces will be added in future, such as meters and grid storage, as well as adjustments to the balance of the fleet work order numbers.
 
-Customer and Inventory tables serve as base tables, and as dimension tables, along with some of their supporting tables. The tables WOCustomer and WOInfras are work order tables and are able to hold multiple transactions against a single Spark work order (SparcWONumber).
+Customer and Inventory tables serve as base tables, and also as dimension tables. Several smaller supporting tables do the same. The tables WOCustomer and WOInfras are work order tables and hold from 1 ==> N multiple transactions against a single Spark work order (SparcWONumber).
 
-WorkOrderCustFact, WorkOrderInfrasFact, and DimDate are all data warehouse tables, and serve to aggregate information about customer work orders, infrastructure/inventory work orders, and DimDate holds multiple levels of date information for any analysis to slice against.
+The tables WorkOrderCustFact, WorkOrderInfrasFact, and DimDate are all data warehouse tables, and serve to prepare and aggregate information about customer work orders, and infrastructure/inventory work orders. DimDate holds multiple levels of date information for analysis to slice against.
 
 ### Main Entities for the data mart focused on fleet operations:
 
