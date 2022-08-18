@@ -81,7 +81,7 @@ UPDATE WorkOrderInfrasFact SET DWProc = 0;
 The DWProc field indicates that the record has been processed, 
 so that subsequent runs against the WOCustomer or WOInfras tables do not count a particular work order record more than once.
 
-Congratulations! The demo SparcElectric mixed use data warehouse is set up and initialized, and you have generated sample work orders to use with the accompanying Power Bi reports.
+The demo is set up and initialized, and sample work orders hace been generated to use with the accompanying Power Bi reports.
 
 [Back to Main Page](index.md)  
 [Go To Technical and Entity Information](technical.md)
