@@ -1,7 +1,9 @@
 ## Additional Information
-[Back to Main Page](index.md)
+[Back to Main Page](index.md)   
+[How the SparcElectric Test-bed was Generated](steps_to_build.md)  
 
-[How the SparcElectric Test-bed was Generated](steps_to_build.md)
+---  
+
 ### Overview:
 
 This is a preliminary setup of data for a mixed workload data warehouse combining OLTP properties with data warehouse capabilities. 
@@ -60,8 +62,8 @@ Complete Work Order tables
 - “Lift and Shift” the SSIS packages that generate the simulated work orders onto Azure. (as an exercise to test the process.)
 
 
-[Back to Main Page](index.md)
+[Back to Main Page](index.md)   
+[How the SparcElectric Test-bed was Generated](steps_to_build.md)  
 
-[How the SparcElectric Test-bed was Generated](steps_to_build.md)
 
 
