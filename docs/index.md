@@ -2,7 +2,9 @@
 
 Site is currently in process of upload, editing, and pages creation.
             Please be patient. Changes are incomplete.
+            
 [Go To Technical and Entity Information](technical.md)
+
 [How the SparcElectric Test-bed was Generated](steps_to_build.md)            
 	    
 ### The Scenario
@@ -71,6 +73,7 @@ Turns out it's lighting, largely due to the number of streetlights the company k
 - Data: Work order data is randomized between two limits; a min and max for customer related labor and equipment costs that varies over time, and a min and max for infrastructure related labor and equipment costs that varies over the same time period.
 
 [Go To Technical and Entity Information](technical.md)
+
 [How the SparcElectric Test-bed was Generated](steps_to_build.md)
 
              

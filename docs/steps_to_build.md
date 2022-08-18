@@ -1,4 +1,5 @@
 [Back to Main Page](index.md)
+
 [Go To Technical and Entity Information](technical.md)
 
 This assumes access and authority to run SSMS scripts, or to run scripts against 
@@ -83,6 +84,7 @@ so that subsequent runs against the WOCustomer or WOInfras tables do not count a
 Congratulations! The demo SparcElectric mixed use data warehouse is set up and initialized, and you have generated sample work orders to use with the accompanying Power Bi reports.
 
 [Back to Main Page](index.md)
+
 [Go To Technical and Entity Information](technical.md)
 
 
