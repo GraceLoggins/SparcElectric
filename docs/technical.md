@@ -61,6 +61,7 @@ WorkOrderCustFact, WorkOrderInfrasFact, and DimDate are all data warehouse table
 - “Lift and Shift” the SSIS packages that generate the simulated work orders onto Azure. (as an exercise to test the process.)
 
 
+
 [Back to Main Page](index.md)   
 [How the SparcElectric Test-bed was Generated](steps_to_build.md)  
 
