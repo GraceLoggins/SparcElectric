@@ -1,4 +1,4 @@
-## SparcElectric Test-bed
+## SparcElectric Mixed Workload Database <br/> and Data Warehouse Test-bed
 
 Site is currently in process of upload, editing, and pages creation.
             Please be patient. Changes are incomplete.
