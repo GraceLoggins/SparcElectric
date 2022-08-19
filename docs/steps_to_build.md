@@ -75,8 +75,7 @@ Generates additional work orders for randomly selected SparcWONumbers, so that a
 
 The final steps use stored procedures I wrote to accumulate the work orders, adding some additional information required by the inquiry, and removing fields that are invalid in aggregation. They write the records produced to the fact tables.  
 
-**After running the SSIS packages, we skip back to SSMS to run the procedures we installed previously. From SSMS query:**
-
+**After running the SSIS packages, we skip back to SSMS to run the procedures installed in the first step from 05A_ADD_STORED_PROCS.sql. Run them as follows:**
 
 ```
 USE SparcElectricHybridDW;
@@ -90,8 +89,12 @@ GO
 EXEC dbo.sparc_ProcessInfrasWOintoDW;
 ```
 
-Note:
+With a clean run, the SparcElectric Test-bed is all set up. The demo is now ready, with randomized sample work orders generated to use with the accompanying Power BI reports.
+
+--- 
+Troubleshooting Note:
 If there is difficulty during the initial load while running either of the sparc_Process stored procedures, remember to set the DWProc field to 0 (indicating a processed record) before running it again.
+The following is **unnecessary** unless troubleshooting as in the above note.
 ```
 UPDATE WOCustomer SET DWProc = 0;
 UPDATE WOInfras SET DWProc = 0; 
@@ -101,8 +104,8 @@ UPDATE WorkOrderInfrasFact SET DWProc = 0;
 
 The DWProc field indicates that the record has been processed, so that subsequent runs against the WOCustomer or WOInfras tables do not count a particular work order record more than once.
 
+---
 
-The demo is now set up, and sample work orders have been generated to use with the accompanying Power BI reports.
 
 [Back to Main Page](index.md)  
 [Go To Technical and Entity Information](technical.md)
