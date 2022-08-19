@@ -9,8 +9,10 @@
 
 ---
 
+
 ### SSMS:
 The initial setup files are T-SQL. They require access and authority to run SSMS scripts, or to run scripts against a database server in which the user has authority to create a database, and perform CRUD operations. (along with alter and drop)  
+
 
 __Run the six-part segmented script as follows:__
 
@@ -37,7 +39,6 @@ Runs all the necessary code to insert and complete a date dimension for the data
     The date dimension is specific to the dates 2018 - 2022 and will be updated to allow generation of other date ranges in future.
 
 ---
-
 
 
 ### SSIS:
