@@ -1,4 +1,3 @@
-## SparcElectric Mixed Workload Database <br/> and Data Warehouse Test-bed
 [Go To Technical and Entity Information](technical.md)   
 [How the SparcElectric Test-bed was Generated](steps_to_build.md)  
 
