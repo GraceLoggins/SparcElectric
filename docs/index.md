@@ -52,7 +52,7 @@ The dashboard below shows the onsite repair hours along with the equipment costs
 
 > What inventory segment (street lights, transformers, power lines, etc.) is SparcElectric spending the most on for internal maintenance and repairs?
 
-Turns out it's lighting, largely due to the number of streetlights the company keeps in repair.
+It appears to be lighting, largely due to the random nature of the equipment charges, and the labor hours required, as well as the number of streetlights the company keeps in repair.
 
 ![Lighting:Another view](./powerbi_pix/Lighting2.PNG)
 
