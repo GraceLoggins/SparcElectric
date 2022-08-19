@@ -2,7 +2,7 @@
 [How the SparcElectric Test-bed was Generated](steps_to_build.md)  
 
 ---  
-### SparcElectric  
+### SparcElectric Mixed Workload Database <br/> and Data Warehouse Test-bed
 ---  
 
 
