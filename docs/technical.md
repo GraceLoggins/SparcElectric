@@ -2,6 +2,9 @@
 [How the SparcElectric Test-bed was Generated](steps_to_build.md)  
 
 ---  
+### Technical and Entity Information  
+---  
+
 
 ### Overview:
 
