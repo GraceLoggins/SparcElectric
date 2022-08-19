@@ -9,10 +9,12 @@
 
 ---
 
+
 ### SSMS:
 The initial setup files are T-SQL. They require access and authority to run SSMS scripts, or to run scripts against a database server in which the user has authority to create a database, and perform CRUD operations. (along with alter and drop)  
 
-__Run the six-part segmented script as follows:__
+
+**Run the six-part segmented script as follows:**
 
 > 01A_CREATE_SparcElectricDW.sql  
 This sets up the basic underlying database and sets some parameters and configuration for it.
@@ -39,11 +41,10 @@ Runs all the necessary code to insert and complete a date dimension for the data
 ---
 
 
-
 ### SSIS:
 Now that the database is initialized and ready for the Work Orders to be generated, we switch to Visual Studio with SSDT installed to run the SSIS packages. The SSIS packages I created are run against the newly created and filled base tables, and use some randomization (between limits) to create the work orders.  
 
-__Run, in order, the following SSIS packages:__
+**Run, in order, the following SSIS packages:**
 
 ![CreateWorkOrders](./ssis_pix/CreateWorkOrders.PNG)
 > CreateWorkOrders  
@@ -72,9 +73,9 @@ Generates additional work orders for randomly selected SparcWONumbers, so that a
 
 ### SSMS:
 
-The final steps use stored procedures I wrote to accumulate the work orders, adding some additional information required by the inquiry, and removing fields that are invalid in aggregation. They write the records produced to the fact tables.
+The final steps use stored procedures I wrote to accumulate the work orders, adding some additional information required by the inquiry, and removing fields that are invalid in aggregation. They write the records produced to the fact tables.  
 
-__After running the SSIS packages, we skip back to SSMS to run the procedures we installed previously. From SSMS query: __
+**After running the SSIS packages, we skip back to SSMS to run the procedures we installed previously. From SSMS query:**
 
 
 ```
