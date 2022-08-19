@@ -5,7 +5,7 @@
 
 ### Creation of the Test-bed:
 
->Having worked in the Utility sector, I created the tables with that knowledge, along with an awareness of the current changes the power industry now faces.
+>Having worked in the Utility sector, I created the tables with that knowledge, along with an awareness of the current changes the power industry now faces. Note that while the fleet work orders segment is working, this is still a work in progress. See Technical and Entity Information for future directions list.
 
 ---
 
@@ -94,7 +94,7 @@ With a clean run, the SparcElectric Test-bed is all set up. The demo is now read
 --- 
 Troubleshooting Note:
 If there is difficulty during the initial load while running either of the sparc_Process stored procedures, remember to set the DWProc field to 0 (indicating a processed record) before running it again.
-The following is **unnecessary** unless troubleshooting as in the above note.
+The following is **unnecessary** unless troubleshooting.
 ```
 UPDATE WOCustomer SET DWProc = 0;
 UPDATE WOInfras SET DWProc = 0; 
