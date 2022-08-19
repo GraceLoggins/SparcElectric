@@ -1,7 +1,10 @@
 [Back to Main Page](index.md)   
 [Go To Technical and Entity Information](technical.md)  
 
----
+---  
+### How the SparcElectric Test-bed was Generated
+---  
+
 
 ### Creation of the Test-bed:
 
@@ -17,6 +20,7 @@ The initial setup files are T-SQL. They require access and authority to run SSMS
 **Run the six-part segmented script as follows:**
 
 > 01A_CREATE_SparcElectricDW.sql  
+[script](https://github.com/GraceLoggins/SparcElectric/blob/main/database%20scripts/01A_CREATE_SparcElectricDW.sql)  
 This sets up the basic underlying database and sets some parameters and configuration for it.
 
 > 02A_CREATE_TABLES_SparcElectricDW.sql  
@@ -24,9 +28,11 @@ This sets up the basic underlying database and sets some parameters and configur
 This creates the tables.
 
 > 03A_FILL_BASE_TABLES_SparcElectricDW.sql  
+[script](https://github.com/GraceLoggins/SparcElectric/blob/main/database%20scripts/03A_FILL_BASE_TABLES_SparcElectricDW.sql)
 This enters base data into the database like Customers, Employees, MeterModels, ConnectionTypes, and employee WorkSkills and their relationship to the employee in EmployeeSkills. It also loads a set of SparcElectric infrastructure types in InfrasType and inventory in Inventory.
 
 > 04A_ADD_FOREIGN_KEYS_ETC.sql  
+[script](https://github.com/GraceLoggins/SparcElectric/blob/main/database%20scripts/04A_ADD_FOREIGN_KEYS_ETC.sql)
 Adds the relationships between the tables as a set of foreign keys with constraints.
 
 > 05A_ADD_STORED_PROCS.sql  
@@ -34,6 +40,7 @@ Adds the relationships between the tables as a set of foreign keys with constrai
 Adds the two stored procedures sparc_ProcessCustWOintoDW and sparc_ProcessInfrasWOintoDW, which are used after the SSIS packages are run, to collect up the SparcWONumbers into the fact tables.
 
 > 06A_ADD_DATE_DIMENSION.sql  
+[script](https://github.com/GraceLoggins/SparcElectric/blob/main/database%20scripts/06A_ADD_DATE_DIMENSION.sql)
 Runs all the necessary code to insert and complete a date dimension for the database.
     Uses a CTE and additional alterations to set up a convenient data dimension.
     The date dimension is specific to the dates 2018 - 2022 and will be updated to allow generation of other date ranges in future.
