@@ -3,8 +3,16 @@
 
 ---
 
-__SSMS:__
-Run the six-part segmented script as follows:
+###Creation of the Test-bed:
+
+>Having worked in the Utility sector, I created the tables with that knowledge, along with an awareness of the current changes the power industry now faces.
+
+---
+
+###SSMS:
+>The initial setup files are T-SQL. They require access and authority to run SSMS scripts, or to run scripts against a database server in which the user has authority to create a database, and perform CRUD operations. (along with alter and drop)  
+
+__Run the six-part segmented script as follows:__
 
 > 01A_CREATE_SparcElectricDW.sql  
 This sets up the basic underlying database and sets some parameters and configuration for it.
@@ -28,11 +36,14 @@ Runs all the necessary code to insert and complete a date dimension for the data
     Uses a CTE and additional alterations to set up a convenient data dimension.
     The date dimension is specific to the dates 2018 - 2022 and will be updated to allow generation of other date ranges in future.
 
+---
 
-Now that the database is initialized and ready for the Work Orders to be generated, we switch to Visual Studio with SSDT installed to run the SSIS packages.
 
-__SSIS:__
-Run, in order, the following SSIS packages:
+
+###SSIS:
+>Now that the database is initialized and ready for the Work Orders to be generated, we switch to Visual Studio with SSDT installed to run the SSIS packages. The SSIS packages I created are run against the newly created and filled base tables, and use some randomization (between limits) to create the work orders.  
+
+__Run, in order, the following SSIS packages:__
 
 ![CreateWorkOrders](./ssis_pix/CreateWorkOrders.PNG)
 > CreateWorkOrders  
@@ -57,11 +68,15 @@ Iinserts to the WOInfras table, providing several variations added to a SparcWON
 (only affecting the work orders for the Inventory entity)  
 Generates additional work orders for randomly selected SparcWONumbers, so that an employee 'works' a single SparcWONumber on multiple contiguous days. Provides a slightly less simplistic base of work orders to play with.
 
+---
 
-__SSMS:__  
-After running the SSIS packages, we skip back to SSMS to run the procedures we installed previously.
+###SSMS:
 
-From the SSMS query:
+> The final steps use stored procedures I wrote to accumulate the work orders, adding some additional information required by the inquiry, and removing fields that are invalid in aggregation. They write the records produced to the fact tables.
+
+__After running the SSIS packages, we skip back to SSMS to run the procedures we installed previously. From SSMS query: __
+
+
 ```
 USE SparcElectricHybridDW;
 GO
@@ -74,8 +89,8 @@ GO
 EXEC dbo.sparc_ProcessInfrasWOintoDW;
 ```
 
-If you have any difficulty during the initial load, running of either of the sparc_Process procedures, remember to set
-the DWProc field to 0 before running it again.
+Note:
+If there is difficulty during the initial load while running either of the sparc_Process stored procedures, remember to set the DWProc field to 0 (indicating a processed record) before running it again.
 ```
 UPDATE WOCustomer SET DWProc = 0;
 UPDATE WOInfras SET DWProc = 0; 
@@ -84,6 +99,7 @@ UPDATE WorkOrderInfrasFact SET DWProc = 0;
 ```
 
 The DWProc field indicates that the record has been processed, so that subsequent runs against the WOCustomer or WOInfras tables do not count a particular work order record more than once.
+
 
 The demo is now set up, and sample work orders have been generated to use with the accompanying Power BI reports.
 
