@@ -2,7 +2,7 @@
 [Go To Technical and Entity Information](technical.md)  
 
 ---  
-### How the SparcElectric Test-bed was Generated
+## How the SparcElectric Test-bed was Generated
 ---  
 
 
