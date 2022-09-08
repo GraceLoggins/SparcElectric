@@ -1,5 +1,6 @@
 [Go To Technical and Entity Information](technical.md)   
 [How the SparcElectric Test-bed was Generated](steps_to_build.md)  
+[See the latest Updates](updates.md)
 
 ---  
 ## SparcElectric Mixed Workload Database <br/> and Data Warehouse Test-bed
