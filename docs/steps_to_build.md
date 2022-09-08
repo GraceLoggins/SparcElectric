@@ -1,5 +1,6 @@
 [Back to Main Page](index.md)   
 [Go To Technical and Entity Information](technical.md)  
+[See the latest Updates](updates.md)
 
 ---  
 ## How the SparcElectric Test-bed was Generated
@@ -115,7 +116,7 @@ The DWProc field indicates that the record has been processed, so that subsequen
 
 
 [Back to Main Page](index.md)  
-[Go To Technical and Entity Information](technical.md)
+[Go To Technical and Entity Information](technical.md)  
 [See the latest Updates](updates.md)
 
 

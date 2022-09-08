@@ -1,5 +1,6 @@
 [Go To Technical and Entity Information](technical.md)   
 [How the SparcElectric Test-bed was Generated](steps_to_build.md)  
+[See the latest Updates](updates.md)
 
 ---  
 ## SparcElectric Mixed Workload Database <br/> and Data Warehouse Test-bed
@@ -77,7 +78,7 @@ Lighting ends up being the largest spend, due to the random nature of the equipm
 - This is a sample test-bed for testing, entertainment, and simulation purposes.
 
 [Go To Technical and Entity Information](technical.md)  
-[How the SparcElectric Test-bed was Generated](steps_to_build.md)
+[How the SparcElectric Test-bed was Generated](steps_to_build.md)  
 [See the latest Updates](updates.md)
              
              
