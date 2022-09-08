@@ -57,6 +57,9 @@ The tables WorkOrderCustFact, WorkOrderInfrasFact, and DimDate are all data ware
 
 ### Test-bed Future Directions and Updates
 
+- Testing of different query execution plans and adjustment of indexes (and the columns participating in them) where necessary. (Taking the time to check indexing for queries, instead of our single columns FKs).
+- Before customer expansion and before the addition of meter reading, SparcElectric will need to consider how to handle partitioning (&filegroups).
+- In conjunction with partitioning, SparcElectric will need to weigh the benefits and any drawbacks of implementing columnstore indexes on the largest tables in its non-standard implementation.
 - Implement the Electric Delivery (Metering) data simulation. Add simulated near real-time meter reads, as SparcElectric migrates from its existing analog and AMR meters to fully digital and near-real-time data collection.
 - Implement the Grid Storage data simulation. Add the entities and simulation of grid storage, interaction with outside vendors, and grid loss to the test-bed.
 - Alter the methods of randomizing the data, to bring it more in line with what a real power company would experience.

@@ -68,7 +68,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[ElecDelivery](
-	[ElecDeliveryID] [int] IDENTITY(1,1) NOT NULL,
+	[ElecDeliveryID] [bigint] IDENTITY(1,1) NOT NULL,
 	[CustomerID] [int] NOT NULL,
 	[DistributionTypeID] [int] NOT NULL,
 	[ETransBegin] [datetime] NOT NULL,

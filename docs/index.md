@@ -72,6 +72,10 @@ Lighting ends up being the largest spend, due to the random nature of the equipm
 - Platform: Microsoft SQL Server on-prem database, SSMS, SSIS, and Power BI.
 - Data: Work order data is randomized between two limits; a min and max for customer related labor and equipment costs that varies over time, and a min and max for infrastructure related labor and equipment costs that varies over the same time period.
 
+### Additional Warning
+- None of the code in the SparcElectric Mixed Database and Data Warehouse Test-bed is production ready and should not be run against a production instance. 
+- This is a sample test-bed for testing, entertainment, and simulation purposes.
+
 [Go To Technical and Entity Information](technical.md)  
 [How the SparcElectric Test-bed was Generated](steps_to_build.md)
 

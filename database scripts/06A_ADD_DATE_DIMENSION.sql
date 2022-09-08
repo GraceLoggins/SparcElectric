@@ -16,7 +16,7 @@ GO
 
 CREATE TABLE [dbo].[DimDate](
 
-[DateKey] int NULL,
+[DateKey] int NOT NULL,
 [CalendarDate] [smalldatetime] NULL,
 [CalendarYear] [int] NULL,
 [QuarterNumber] [int] NULL,
@@ -221,4 +221,8 @@ UPDATE dbo.DimDate SET IsHoliday = 0 WHERE IsHoliday IS NULL;
 UPDATE dbo.DimDate SET IsBankHoliday = 0 WHERE IsBankHoliday IS NULL;
 UPDATE dbo.DimDate SET IsBusinessDay = 1 WHERE IsWeekend = 0 AND IsBankHoliday = 0;
 UPDATE dbo.DimDate SET IsBusinessDay = 0 WHERE IsBusinessDay IS NULL;
+GO
+
+/* Add Clustered Primary Key as DateKey */
+ALTER TABLE DimDate ADD PRIMARY KEY (DateKey);
 GO
