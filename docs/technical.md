@@ -70,6 +70,6 @@ The tables WorkOrderCustFact, WorkOrderInfrasFact, and DimDate are all data ware
 
 [Back to Main Page](index.md)   
 [How the SparcElectric Test-bed was Generated](steps_to_build.md)  
-
+[See the latest Updates](updates.md)
 
 

@@ -8,7 +8,7 @@
 
 ### Creation of the Test-bed:
 
->Having worked in the Utility sector, I created the tables with that knowledge, along with an awareness of the current changes the power industry now faces. Note that while the fleet work orders segment is working, this is still a work in progress. See Technical and Entity Information for future directions list.
+>Having worked in the Utility sector, I created the tables with that knowledge, along with an awareness of the current changes the power industry now faces. Note that while the fleet work orders segment is working, this is still a work in progress. See Technical and Entity Information, near the bottom of the page, for future directions list.
 
 ---
 
@@ -116,7 +116,7 @@ The DWProc field indicates that the record has been processed, so that subsequen
 
 [Back to Main Page](index.md)  
 [Go To Technical and Entity Information](technical.md)
-
+[See the latest Updates](updates.md)
 
 
 
