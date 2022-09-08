@@ -68,7 +68,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[ElecDelivery](
-	[ElecDeliveryID] [int] IDENTITY(1,1) NOT NULL,
+	[ElecDeliveryID] [bigint] IDENTITY(1,1) NOT NULL,
 	[CustomerID] [int] NOT NULL,
 	[DistributionTypeID] [int] NOT NULL,
 	[ETransBegin] [datetime] NOT NULL,
@@ -399,3 +399,25 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+/****** Add Comments to ElectDeliveryFact, WorkOrderCustFact, WorkOrderInfrasFact (09/08/2022)  *****/
+USE SparcElectricHybridDW;
+GO
+EXEC sp_addextendedproperty
+@name = N'Comment',
+@value = 'Per customer daily totals table',
+@level0type = N'Schema', @level0name = 'dbo',
+@level1type = N'Table', @level1name = 'ElecDeliveryFact';
+GO
+EXEC sp_addextendedproperty
+@name = N'Comment',
+@value = 'Per full customer work order record',
+@level0type = N'Schema', @level0name = 'dbo',
+@level1type = N'Table', @level1name = 'WorkOrderCustFact';
+GO
+EXEC sp_addextendedproperty
+@name = N'Comment',
+@value = 'Per full inventory/infrastructure work order record',
+@level0type = N'Schema', @level0name = 'dbo',
+@level1type = N'Table', @level1name = 'WorkOrderInfrasFact';
+GO
+/*************************************************************************/

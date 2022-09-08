@@ -123,4 +123,24 @@ USE [master]
 GO
 ALTER DATABASE [SparcElectricHybridDW] SET  READ_WRITE 
 GO
+/****** Add NONCLUSTERED INDEXes for Foreign Keys ******/
+Use SparcElectricHybridDW;
+GO
+CREATE NONCLUSTERED INDEX IX_Customer_ConnectionTypeID on Customer (ConnectionTypeID ASC);
+CREATE NONCLUSTERED INDEX IX_Customer_MeterModelID on Customer (MeterModelID ASC);
+CREATE NONCLUSTERED INDEX IX_EmployeeSkill_EmployeeID on EmployeeSkill (EmployeeID ASC);
+CREATE NONCLUSTERED INDEX IX_EmployeeSkill_WorkSkillsID on EmployeeSkill (WorkSkillsID ASC);
+CREATE NONCLUSTERED INDEX IX_Inventory_InfrasTypeID on Inventory (InfrasTypeID ASC);
+CREATE NONCLUSTERED INDEX IX_WOCustomer_CustomerID on WOCustomer (CustomerID ASC);
+CREATE NONCLUSTERED INDEX IX_WOCustomer_EmployeeID on WOCustomer (EmployeeID ASC);
+CREATE NONCLUSTERED INDEX IX_WOCustomer_MeterModelID on WOCustomer (MeterModelID ASC);
+CREATE NONCLUSTERED INDEX IX_WOCustomer_WorkOrderTypeID on WOCustomer (WorkOrderTypeID ASC);
+CREATE NONCLUSTERED INDEX IX_WOInfras_EmployeeID on WOInfras (EmployeeID ASC);
+CREATE NONCLUSTERED INDEX IX_WOInfras_InventoryID on WOInfras (InventoryID ASC);
+CREATE NONCLUSTERED INDEX IX_WOInfras_WorkOrderTypeID on WOInfras (WorkOrderTypeID ASC);
+CREATE NONCLUSTERED INDEX IX_WorkOrderCustFact_CustomerID on WorkOrderCustFact (CustomerID ASC);
+CREATE NONCLUSTERED INDEX IX_WorkOrderCustFact_WorkOrderTypeID on WorkOrderCustFact (WorkOrderTypeID ASC);
+CREATE NONCLUSTERED INDEX IX_WorkOrderInfrasFact_InventoryID on WorkOrderInfrasFact (InventoryID ASC);
+CREATE NONCLUSTERED INDEX IX_WorkOrderInfrasFact_WorkOrderTypeID on WorkOrderInfrasFact (WorkOrderTypeID ASC);
+GO
 
