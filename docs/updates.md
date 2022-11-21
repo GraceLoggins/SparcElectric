@@ -3,6 +3,12 @@
 ---  
 ## Latest Update
 ---  
+UPDATES to SparcElectric (11202022)
+
+### Documentation changes
+Change: altered plans in technical section regarding future updates.
+
+---
 UPDATES to SparcElectric (09082022)  
 
 ### Documentation changes  
