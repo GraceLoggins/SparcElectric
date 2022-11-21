@@ -65,7 +65,9 @@ The tables WorkOrderCustFact, WorkOrderInfrasFact, and DimDate are all data ware
 - Implement the Grid Storage data simulation. Add the entities and simulation of grid storage, interaction with outside vendors, and grid loss to the test-bed.
 - Alter the methods of randomizing the data, to bring it more in line with what a real power company would experience.
 - Move part or all of the simulation onto the Azure Platform. Migrate some (hybrid data environment) or all (total re-platforming).
-- “Lift and Shift” the SSIS packages that generate the simulated work orders onto Azure. (as an exercise to test the process.)
+- ~~“Lift and Shift” the SSIS packages that generate the simulated work orders onto Azure. (as an exercise to test the process.)~~
+- Rewrite ETL in Azure Data Factory instead of "Lift and Shift" for both financial reasons and to take advantage of new features.
+- Add additional aggregation tables at larger granularity.
 
 
 
